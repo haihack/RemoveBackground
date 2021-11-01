@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RemoveBackground</string>
+    <string name="pref_key_segmentation_raw_size_mask" translatable="false">srsm</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_key_info_hide" translatable="false">ih</string>
+    <string name="select_image" translatable="false">Select image</string>
+</resources>
