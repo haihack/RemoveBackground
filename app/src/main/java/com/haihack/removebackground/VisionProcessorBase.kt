@@ -334,16 +334,16 @@ abstract class VisionProcessorBase<T>(context: Context) : VisionImageProcessor {
             graphicOverlay.add(CameraImageGraphic(graphicOverlay, originalCameraImage))
           }
           this@VisionProcessorBase.onSuccess(results, graphicOverlay)
-          if (!PreferenceUtils.shouldHideDetectionInfo(graphicOverlay.context)) {
-            graphicOverlay.add(
-              InferenceInfoGraphic(
-                graphicOverlay,
-                currentFrameLatencyMs,
-                currentDetectorLatencyMs,
-                if (shouldShowFps) framesPerSecond else null
-              )
-            )
-          }
+//          if (!PreferenceUtils.shouldHideDetectionInfo(graphicOverlay.context)) {
+//            graphicOverlay.add(
+//              InferenceInfoGraphic(
+//                graphicOverlay,
+//                currentFrameLatencyMs,
+//                currentDetectorLatencyMs,
+//                if (shouldShowFps) framesPerSecond else null
+//              )
+//            )
+//          }
           graphicOverlay.postInvalidate()
         }
       )
